@@ -17,8 +17,8 @@ export class Game extends Scene {
 
   init(data) {
     // Reset points
-    this.points = data.points || 0;
-    this.game_over_timeout = data.game_over_timeout || 99;
+    this.points = data.points ||0;
+    this.game_over_timeout = data.game_over_timeout ||99;
 
     // launch the HUD scene
     this.scene.launch("Hud", { remaining_time: this.game_over_timeout });
